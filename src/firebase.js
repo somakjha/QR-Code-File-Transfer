@@ -18,3 +18,30 @@ const firebaseConfig = {
 
   export default firebase;
 
+/*
+import firebase from "../firebase";
+const names=[];
+var storage = firebase.storage();
+  var storageRef=storage.ref();
+  var i=0;
+  storageRef.listAll().then(function(result)
+  {
+    result.items.forEach(function(imageRef)
+   {
+      i++;
+      displayImage(i,imageRef);
+   });
+
+  });
+
+  function displayImage(row,images)
+  {
+        images.getDownloadURL().then(function(url){
+
+          console.log(url);
+          
+
+        });
+  }
+
+*/
